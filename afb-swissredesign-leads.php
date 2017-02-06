@@ -90,6 +90,7 @@ class AFBSwissRedesignLeads {
 	public function afb_sr_register_meta_boxes() {
 		add_meta_box( 'sr-basisinfos', __( 'swissredesign.ch - Company - Basic Info', 'afb-swissredesign-leads' ), array($this, 'afb_sr_meta_box_basicinfos'), 'lead', 'normal', 'high' );
 		add_meta_box( 'sr-firmeninfos', __( 'swissredesign.ch - Detailed Info', 'afb-swissredesign-leads' ), array($this, 'afb_sr_meta_box_companyinfos'), 'lead', 'normal', 'high' );
+		add_meta_box( 'sr-interactions', __( 'swissredesign.ch - Interactions', 'afb-swissredesign-leads' ), array($this, 'afb_sr_meta_box_interactions'), 'lead', 'normal', 'high' );
 		add_meta_box( 'sr-designbrief', __( 'swissredesign.ch - Design Brief', 'afb-swissredesign-leads' ), array($this, 'afb_sr_meta_box_designbrief'), 'lead', 'normal', 'high' );
 		add_meta_box( 'sr-ziele', __( 'swissredesign.ch - Redesign Goals/Functionality', 'afb-swissredesign-leads' ), array($this, 'afb_sr_meta_box_goals'), 'lead', 'normal', 'high' );
 		add_meta_box( 'sr-contact', __( 'swissredesign.ch - Client Contacts', 'afb-swissredesign-leads' ), array($this, 'afb_sr_meta_box_contact'), 'lead', 'normal', 'high' );
@@ -184,6 +185,174 @@ class AFBSwissRedesignLeads {
 		</div>
 	<?php	
 	}
+	
+	public function afb_sr_meta_box_interactions ($post) {	
+	
+		// Retrieve current date for cookie
+		$sr_interaction1_date = get_post_meta( $post->ID, '_sr_interaction1_date', true  );
+		$sr_interaction1_textarea = get_post_meta( $post->ID, '_sr_interaction1_textarea', true  );
+		$sr_interaction2_date = get_post_meta( $post->ID, '_sr_interaction2_date', true  );
+		$sr_interaction2_textarea = get_post_meta( $post->ID, '_sr_interaction2_textarea', true  );
+		$sr_interaction3_date = get_post_meta( $post->ID, '_sr_interaction3_date', true  );
+		$sr_interaction3_textarea = get_post_meta( $post->ID, '_sr_interaction3_textarea', true  );
+		$sr_interaction4_date = get_post_meta( $post->ID, '_sr_interaction4_date', true  );
+		$sr_interaction4_textarea = get_post_meta( $post->ID, '_sr_interaction4_textarea', true  );
+		$sr_interaction5_date = get_post_meta( $post->ID, '_sr_interaction5_date', true  );
+		$sr_interaction5_textarea = get_post_meta( $post->ID, '_sr_interaction5_textarea', true  );
+		$sr_interaction6_date = get_post_meta( $post->ID, '_sr_interaction6_date', true  );
+		$sr_interaction6_textarea = get_post_meta( $post->ID, '_sr_interaction6_textarea', true  );
+		$sr_interaction7_date = get_post_meta( $post->ID, '_sr_interaction7_date', true  );
+		$sr_interaction7_textarea = get_post_meta( $post->ID, '_sr_interaction7_textarea', true  );
+		$sr_interaction8_date = get_post_meta( $post->ID, '_sr_interaction8_date', true  );
+		$sr_interaction8_textarea = get_post_meta( $post->ID, '_sr_interaction8_textarea', true  );
+		$sr_interaction9_date = get_post_meta( $post->ID, '_sr_interaction9_date', true  );
+		$sr_interaction9_textarea = get_post_meta( $post->ID, '_sr_interaction9_textarea', true  );		
+		$sr_interaction10_date = get_post_meta( $post->ID, '_sr_interaction10_date', true  );
+		$sr_interaction10_textarea = get_post_meta( $post->ID, '_sr_interaction10_textarea', true  );		
+		?>
+		<h3><?php _e( 'Interaction 1', 'afb-swissredesign-leads' )?></h3>
+		<h5><?php _e( 'Cold Call', 'afb-swissredesign-leads' )?></h5>
+		<div style="width:31%; float:left;">
+		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
+		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_interaction1_date; ?>" />
+		</div>
+ 		<div style="width:69%; float:right;">
+		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
+		<p>
+			<textarea rows="2" name="sr_interaction1_textarea" id="sr_full_textarea"><?php if ( isset ( $sr_interaction1_textarea ) ) echo $sr_interaction1_textarea; ?></textarea>
+		</p>
+		</div>
+		<div style="clear:both;"></div>
+		<hr/>
+		<h3><?php _e( 'Interaction 2', 'afb-swissredesign-leads' )?></h3>
+		<h5><?php _e( 'First scheduled, qualification, set ground rules, get agreement on discovery', 'afb-swissredesign-leads' )?></h5>
+		<div style="width:31%; float:left;">
+		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
+		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		</div>
+ 		<div style="width:69%; float:right;">
+		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
+		<p>
+			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+		</p>
+		</div>		
+		<div style="clear:both;"></div>
+		<hr/>
+		<h3><?php _e( 'Interaction 3', 'afb-swissredesign-leads' )?></h3>
+		<h5><?php _e( 'Discovery 1, understand business, stated needs', 'afb-swissredesign-leads' )?></h5>
+		<div style="width:31%; float:left;">
+		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
+		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		</div>
+ 		<div style="width:69%; float:right;">
+		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
+		<p>
+			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+		</p>
+		</div>	
+		<div style="clear:both;"></div>
+		<hr/>		
+		<h3><?php _e( 'Interaction 4', 'afb-swissredesign-leads' )?></h3>
+		<h5><?php _e( 'Discovery 2, understand customer', 'afb-swissredesign-leads' )?></h5>
+		<div style="width:31%; float:left;">
+		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
+		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		</div>
+ 		<div style="width:69%; float:right;">
+		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
+		<p>
+			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+		</p>
+		</div>	
+		<div style="clear:both;"></div>
+		<hr/>		
+		<h3><?php _e( 'Interaction 5', 'afb-swissredesign-leads' )?></h3>
+		<h5><?php _e( 'Discovery 3, understand market / competition', 'afb-swissredesign-leads' )?></h5>
+		<div style="width:31%; float:left;">
+		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
+		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		</div>
+ 		<div style="width:69%; float:right;">
+		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
+		<p>
+			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+		</p>
+		</div>	
+		<div style="clear:both;"></div>
+		<hr/>
+		<h3><?php _e( 'Interaction 6', 'afb-swissredesign-leads' )?></h3>
+		<h5><?php _e( 'Discovery 4, understand strategy & tactics (tried & available)', 'afb-swissredesign-leads' )?></h5>
+		<div style="width:31%; float:left;">
+		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
+		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		</div>
+ 		<div style="width:69%; float:right;">
+		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
+		<p>
+			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+		</p>
+		</div>	
+		<div style="clear:both;"></div>
+		<hr/>	
+		<h3><?php _e( 'Interaction 7', 'afb-swissredesign-leads' )?></h3>
+		<h5><?php _e( 'Solution Presentation', 'afb-swissredesign-leads' )?></h5>
+		<div style="width:31%; float:left;">
+		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
+		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		</div>
+ 		<div style="width:69%; float:right;">
+		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
+		<p>
+			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+		</p>
+		</div>	
+		<div style="clear:both;"></div>
+		<hr/>	
+		<h3><?php _e( 'Interaction 8', 'afb-swissredesign-leads' )?></h3>
+		<h5><?php _e( 'Proposal Presentation', 'afb-swissredesign-leads' )?></h5>
+		<div style="width:31%; float:left;">
+		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
+		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		</div>
+ 		<div style="width:69%; float:right;">
+		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
+		<p>
+			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+		</p>
+		</div>	
+		<div style="clear:both;"></div>
+		<hr/>
+		<h3><?php _e( 'Interaction 9', 'afb-swissredesign-leads' )?></h3>
+		<h5><?php _e( 'Work Plan', 'afb-swissredesign-leads' )?></h5>
+		<div style="width:31%; float:left;">
+		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
+		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		</div>
+ 		<div style="width:69%; float:right;">
+		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
+		<p>
+			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+		</p>
+		</div>	
+		<div style="clear:both;"></div>
+		<hr/>
+		<h3><?php _e( 'Interaction 10', 'afb-swissredesign-leads' )?></h3>
+		<h5><?php _e( 'Project Kickoff', 'afb-swissredesign-leads' )?></h5>
+		<div style="width:31%; float:left;">
+		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
+		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		</div>
+ 		<div style="width:69%; float:right;">
+		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
+		<p>
+			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+		</p>
+		</div>	
+		<div style="clear:both;"></div>
+		<hr/>				
+	<?php	
+	}
+	
 	public function afb_sr_meta_box_designbrief ($post) {
 		wp_nonce_field('sr_nonce_check', 'sr_nonce_check_value');
 		$sr_bisheriger_designstil = get_post_meta($post -> ID, '_sr_bisheriger_designstil', true);
@@ -473,7 +642,7 @@ class AFBSwissRedesignLeads {
 		</p>	
 	<?php	
 	}	
-
+	
 	public function afb_sr_meta_box_contact ($post) {	
 	
 		$repeatable_fields = get_post_meta($post->ID, 'repeatable_fields', true);
@@ -538,9 +707,9 @@ class AFBSwissRedesignLeads {
 	public function afb_sr_meta_box_project ($post) {	
 	
 		// Retrieve current date for cookie
-		$sr_proejct_start_date = get_post_meta( $post->ID, 'sr_proejct_start_date', true  );
-		$sr_proejct_projend_date = get_post_meta( $post->ID, 'sr_proejct_projend_date', true  );
-		$sr_proejct_end_date = get_post_meta( $post->ID, 'sr_proejct_end_date', true  );
+		$sr_project_start_date = get_post_meta( $post->ID, '_sr_project_start_date', true  );
+		$sr_project_projend_date = get_post_meta( $post->ID, '_sr_project_projend_date', true  );
+		$sr_project_end_date = get_post_meta( $post->ID, '_sr_project_end_date', true  );
 		?>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Start Date', 'afb-swissredesign-leads' )?></strong></p>

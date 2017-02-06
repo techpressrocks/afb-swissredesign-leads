@@ -15,6 +15,12 @@
     width: 30%;
 	font-weight: bold;
 }
+.swiss_redesign_interactionlabel {
+    display: block;
+    float: left;
+    width: 100%;
+	font-weight: bold;
+}
 #wp-_wp_editor_firmeninfos-wrap {
     overflow: hidden;
 	width: 65%;
@@ -24,4 +30,8 @@
 }	
 #postdivrich.postarea.wp-editor-expand {
 	display: none;
+}
+hr {
+    margin-left: -12px;
+    margin-right: -12px;
 }
