@@ -214,7 +214,7 @@ class AFBSwissRedesignLeads {
 		<h5><?php _e( 'Cold Call', 'afb-swissredesign-leads' )?></h5>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_interaction1_date; ?>" />
+		<input type="text" name="sr_interaction1_date" class="datepicker"  value="<?php echo $sr_interaction1_date; ?>" />
 		</div>
  		<div style="width:69%; float:right;">
 		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
@@ -228,12 +228,12 @@ class AFBSwissRedesignLeads {
 		<h5><?php _e( 'First scheduled, qualification, set ground rules, get agreement on discovery', 'afb-swissredesign-leads' )?></h5>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_interaction2_date" class="datepicker" value="<?php echo $sr_interaction2_date; ?>" />
 		</div>
  		<div style="width:69%; float:right;">
 		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
 		<p>
-			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+			<textarea rows="2" name="sr_interaction2_textarea" id="sr_full_textarea"><?php if ( isset ( $sr_interaction2_textarea ) ) echo $sr_interaction2_textarea; ?></textarea>
 		</p>
 		</div>		
 		<div style="clear:both;"></div>
@@ -242,12 +242,12 @@ class AFBSwissRedesignLeads {
 		<h5><?php _e( 'Discovery 1, understand business, stated needs', 'afb-swissredesign-leads' )?></h5>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_interaction3_date" class="datepicker" value="<?php echo $sr_interaction3_date; ?>" />
 		</div>
  		<div style="width:69%; float:right;">
 		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
 		<p>
-			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+			<textarea rows="2" name="sr_interaction3_textarea" id="sr_full_textarea"><?php if ( isset ( $sr_interaction3_textarea ) ) echo $sr_interaction3_textarea; ?></textarea>
 		</p>
 		</div>	
 		<div style="clear:both;"></div>
@@ -256,12 +256,12 @@ class AFBSwissRedesignLeads {
 		<h5><?php _e( 'Discovery 2, understand customer', 'afb-swissredesign-leads' )?></h5>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_interaction4_date" class="datepicker" value="<?php echo $sr_interaction4_date; ?>" />
 		</div>
  		<div style="width:69%; float:right;">
 		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
 		<p>
-			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+			<textarea rows="2" name="sr_interaction4_textarea" id="sr_full_textarea"><?php if ( isset ( $sr_interaction4_textarea ) ) echo $sr_interaction4_textarea; ?></textarea>
 		</p>
 		</div>	
 		<div style="clear:both;"></div>
@@ -270,12 +270,12 @@ class AFBSwissRedesignLeads {
 		<h5><?php _e( 'Discovery 3, understand market / competition', 'afb-swissredesign-leads' )?></h5>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_interaction5_date" class="datepicker" value="<?php echo $sr_interaction5_date; ?>" />
 		</div>
  		<div style="width:69%; float:right;">
 		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
 		<p>
-			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+			<textarea rows="2" name="sr_interaction5_textarea" id="sr_full_textarea"><?php if ( isset ( $sr_interaction5_textarea ) ) echo $sr_interaction5_textarea; ?></textarea>
 		</p>
 		</div>	
 		<div style="clear:both;"></div>
@@ -284,12 +284,12 @@ class AFBSwissRedesignLeads {
 		<h5><?php _e( 'Discovery 4, understand strategy & tactics (tried & available)', 'afb-swissredesign-leads' )?></h5>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_interaction6_date" class="datepicker" value="<?php echo $sr_interaction6_date; ?>" />
 		</div>
  		<div style="width:69%; float:right;">
 		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
 		<p>
-			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+			<textarea rows="2" name="sr_interaction6_textarea" id="sr_full_textarea"><?php if ( isset ( $sr_interaction6_textarea ) ) echo $sr_interaction6_textarea; ?></textarea>
 		</p>
 		</div>	
 		<div style="clear:both;"></div>
@@ -298,12 +298,12 @@ class AFBSwissRedesignLeads {
 		<h5><?php _e( 'Solution Presentation', 'afb-swissredesign-leads' )?></h5>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_interaction7_date" class="datepicker" value="<?php echo $sr_interaction7_date; ?>" />
 		</div>
  		<div style="width:69%; float:right;">
 		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
 		<p>
-			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+			<textarea rows="2" name="sr_interaction7_textarea" id="sr_full_textarea"><?php if ( isset ( $sr_interaction7_textarea ) ) echo $sr_interaction7_textarea; ?></textarea>
 		</p>
 		</div>	
 		<div style="clear:both;"></div>
@@ -312,12 +312,12 @@ class AFBSwissRedesignLeads {
 		<h5><?php _e( 'Proposal Presentation', 'afb-swissredesign-leads' )?></h5>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_interaction8_date" class="datepicker" value="<?php echo $sr_interaction8_date; ?>" />
 		</div>
  		<div style="width:69%; float:right;">
 		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
 		<p>
-			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+			<textarea rows="2" name="sr_interaction8_textarea" id="sr_full_textarea"><?php if ( isset ( $sr_interaction8_textarea ) ) echo $sr_interaction8_textarea; ?></textarea>
 		</p>
 		</div>	
 		<div style="clear:both;"></div>
@@ -326,12 +326,12 @@ class AFBSwissRedesignLeads {
 		<h5><?php _e( 'Work Plan', 'afb-swissredesign-leads' )?></h5>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_interaction9_date" class="datepicker" value="<?php echo $sr_interaction9_date; ?>" />
 		</div>
  		<div style="width:69%; float:right;">
 		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
 		<p>
-			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+			<textarea rows="2" name="sr_interaction9_textarea" id="sr_full_textarea"><?php if ( isset ( $sr_interaction9_textarea ) ) echo $sr_interaction9_textarea; ?></textarea>
 		</p>
 		</div>	
 		<div style="clear:both;"></div>
@@ -340,12 +340,12 @@ class AFBSwissRedesignLeads {
 		<h5><?php _e( 'Project Kickoff', 'afb-swissredesign-leads' )?></h5>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_interaction10_date" class="datepicker" value="<?php echo $sr_interaction10_date; ?>" />
 		</div>
  		<div style="width:69%; float:right;">
 		<p><strong><?php _e( 'Notes', 'afb-swissredesign-leads' )?></strong></p>
 		<p>
-			<textarea rows="2" name="sr_goals_textarea1" id="sr_full_textarea"><?php if ( isset ( $sr_goals_textarea1 ) ) echo $sr_goals_textarea1; ?></textarea>
+			<textarea rows="2" name="sr_interaction10_textarea" id="sr_full_textarea"><?php if ( isset ( $sr_interaction10_textarea ) ) echo $sr_interaction10_textarea; ?></textarea>
 		</p>
 		</div>	
 		<div style="clear:both;"></div>
@@ -550,31 +550,31 @@ class AFBSwissRedesignLeads {
 		<div style="clear:both;"></div>
 		<div>
 			<label for="sr_goals_checkbox1">
-				<input type="checkbox" name="sr_goals_checkbox1" id="sr_goals_checkbox1" value="yes" <?php if ( isset ( $sr_goals_checkbox1 ) ) checked( $sr_goals_checkbox1, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox1" value="yes" <?php if ( isset ( $sr_goals_checkbox1 ) ) checked( $sr_goals_checkbox1, 'yes' ); ?> />
 					<?php _e( 'Mehr Kundenkontakte (Lead Generation)', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>
 		<div>
 			<label for="sr_goals_checkbox2">
-				<input type="checkbox" name="sr_goals_checkbox2" id="sr_goals_checkbox2" value="yes" <?php if ( isset ( $sr_goals_checkbox2 ) ) checked( $sr_goals_checkbox2, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox2" value="yes" <?php if ( isset ( $sr_goals_checkbox2 ) ) checked( $sr_goals_checkbox2, 'yes' ); ?> />
 					<?php _e( 'Direkter Verkauf (E-Commerce mit WooCommerce)', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>
 		<div>		
 			<label for="sr_goals_checkbox3">
-				<input type="checkbox" name="sr_goals_checkbox3" id="sr_goals_checkbox3" value="yes" <?php if ( isset ( $sr_goals_checkbox3 ) ) checked( $sr_goals_checkbox3, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox3" value="yes" <?php if ( isset ( $sr_goals_checkbox3 ) ) checked( $sr_goals_checkbox3, 'yes' ); ?> />
 					<?php _e( 'Kunden-Support (z.B. mit FAQ, Support-Chat usw.)', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>
 		<div>
 			<label for="sr_goals_checkbox4">
-				<input type="checkbox" name="sr_goals_checkbox4" id="sr_goals_checkbox4" value="yes" <?php if ( isset ( $sr_goals_checkbox4 ) ) checked( $sr_goals_checkbox4, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox4" value="yes" <?php if ( isset ( $sr_goals_checkbox4 ) ) checked( $sr_goals_checkbox4, 'yes' ); ?> />
 					<?php _e( 'Generell Auffrischung des Web-Auftritts', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>	
 		<div>
 			<label for="sr_goals_checkbox5">
-				<input type="checkbox" name="sr_goals_checkbox5" id="sr_goals_checkbox5" value="yes" <?php if ( isset ( $sr_goals_checkbox5 ) ) checked( $sr_goals_checkbox5, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox5" value="yes" <?php if ( isset ( $sr_goals_checkbox5 ) ) checked( $sr_goals_checkbox5, 'yes' ); ?> />
 					<?php _e( 'Andere Ziele', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>
@@ -585,55 +585,55 @@ class AFBSwissRedesignLeads {
 		<div style="clear:both;"></div>
 		<div>
 			<label for="sr_goals_checkbox6">
-				<input type="checkbox" name="sr_goals_checkbox6" id="sr_goals_checkbox6" value="yes" <?php if ( isset ( $sr_goals_checkbox6 ) ) checked( $sr_goals_checkbox6, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox6" value="yes" <?php if ( isset ( $sr_goals_checkbox6 ) ) checked( $sr_goals_checkbox6, 'yes' ); ?> />
 					<?php _e( 'Fotos (Bildmaterial)', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>		
 		<div>
 			<label for="sr_goals_checkbox7">
-				<input type="checkbox" name="sr_goals_checkbox7" id="sr_goals_checkbox7" value="yes" <?php if ( isset ( $sr_goals_checkbox7 ) ) checked( $sr_goals_checkbox7, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox7" value="yes" <?php if ( isset ( $sr_goals_checkbox7 ) ) checked( $sr_goals_checkbox7, 'yes' ); ?> />
 					<?php _e( 'Kontaktform', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>
 		<div>
 			<label for="sr_goals_checkbox8">
-				<input type="checkbox" name="sr_goals_checkbox8" id="sr_goals_checkbox8" value="yes" <?php if ( isset ( $sr_goals_checkbox8 ) ) checked( $sr_goals_checkbox8, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox8" value="yes" <?php if ( isset ( $sr_goals_checkbox8 ) ) checked( $sr_goals_checkbox8, 'yes' ); ?> />
 					<?php _e( 'E-Commerce (WooCommerce)', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>
 		<div>		
 			<label for="sr_goals_checkbox9">
-				<input type="checkbox" name="sr_goals_checkbox9" id="sr_goals_checkbox9" value="yes" <?php if ( isset ( $sr_goals_checkbox9 ) ) checked( $sr_goals_checkbox9, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox9" value="yes" <?php if ( isset ( $sr_goals_checkbox9 ) ) checked( $sr_goals_checkbox9, 'yes' ); ?> />
 					<?php _e( 'Call-to-Action (Handlungsaufforderungen)', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>
 		<div>
 			<label for="sr_goals_checkbox10">
-				<input type="checkbox" name="sr_goals_checkbox10" id="sr_goals_checkbox10" value="yes" <?php if ( isset ( $sr_goals_checkbox10 ) ) checked( $sr_goals_checkbox10, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox10" value="yes" <?php if ( isset ( $sr_goals_checkbox10 ) ) checked( $sr_goals_checkbox10, 'yes' ); ?> />
 					<?php _e( 'Suchfunktion', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>	
 		<div>
 			<label for="sr_goals_checkbox11">
-				<input type="checkbox" name="sr_goals_checkbox11" id="sr_goals_checkbox11" value="yes" <?php if ( isset ( $sr_goals_checkbox11 ) ) checked( $sr_goals_checkbox11, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox11" value="yes" <?php if ( isset ( $sr_goals_checkbox11 ) ) checked( $sr_goals_checkbox11, 'yes' ); ?> />
 					<?php _e( 'Einbindung Soziale Medien', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>
 		<div>
 			<label for="sr_goals_checkbox12">
-				<input type="checkbox" name="sr_goals_checkbox12" id="sr_goals_checkbox12" value="yes" <?php if ( isset ( $sr_goals_checkbox12 ) ) checked( $sr_goals_checkbox12, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox12" value="yes" <?php if ( isset ( $sr_goals_checkbox12 ) ) checked( $sr_goals_checkbox12, 'yes' ); ?> />
 					<?php _e( 'Blog- oder News-Bereich', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>	
 		<div>
 			<label for="sr_goals_checkbox13">
-				<input type="checkbox" name="sr_goals_checkbox13" id="sr_goals_checkbox13" value="yes" <?php if ( isset ( $sr_goals_checkbox13 ) ) checked( $sr_goals_checkbox13, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox13" value="yes" <?php if ( isset ( $sr_goals_checkbox13 ) ) checked( $sr_goals_checkbox13, 'yes' ); ?> />
 					<?php _e( 'Sitemap', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>
 		<div>
 			<label for="sr_goals_checkbox14">
-				<input type="checkbox" name="sr_goals_checkbox14" id="sr_goals_checkbox14" value="yes" <?php if ( isset ( $sr_goals_checkbox14 ) ) checked( $sr_goals_checkbox14, 'yes' ); ?> />
+				<input type="checkbox" name="sr_goals_checkbox14" value="yes" <?php if ( isset ( $sr_goals_checkbox14 ) ) checked( $sr_goals_checkbox14, 'yes' ); ?> />
 					<?php _e( 'Other Functionality', 'afb-swissredesign-leads' )?>
 			</label>
 		</div>		
@@ -713,17 +713,17 @@ class AFBSwissRedesignLeads {
 		?>
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Start Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="start_date" id="start_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_project_start_date" class="datepicker" value="<?php echo $sr_project_start_date; ?>" />
 		</div>
  
 		<div style="width:31%; display:inline-block;">
 		<p><strong><?php _e( 'Projected End Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="projectedend_date" id="projectedend_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_project_projend_date" class="datepicker" value="<?php echo $sr_project_projend_date; ?>" />
 		</div>
  
 		<div style="width:31%; float:right;">
 		<p><strong><?php _e( 'Actual End Date', 'afb-swissredesign-leads' )?></strong></p>
-		<input type="text" name="end_date" id="end_date" value="<?php echo $sr_proejct_start_date; ?>" />
+		<input type="text" name="sr_project_end_date" class="datepicker" value="<?php echo $sr_project_end_date; ?>" />
 		</div>
 		<div style="clear:both;"></div>
 		
@@ -735,11 +735,11 @@ class AFBSwissRedesignLeads {
 
 		<div style="width:31%; float:left;">
 		<p><strong><?php _e( 'Project Status', 'afb-swissredesign-leads' )?></strong></p>
-        <select name="sr_projektstatus_select" id="sr_projektstatus_select">
+        <select name="sr_projektstatus_select">
             <option value="status_nichtgesetzt" <?php selected( $sr_projektstatus_selected, 'status_nichtgesetzt' ); ?>><?php _e( 'Not Set', 'afb-swissredesign-leads' )?></option>
             <option value="kontaktphase" <?php selected( $sr_projektstatus_selected, 'kontaktphase' ); ?>><?php _e( 'Contact Phase', 'afb-swissredesign-leads' )?></option>
 			<option value="offertphase" <?php selected( $sr_projektstatus_selected, 'offertphase' ); ?>><?php _e( 'Proposal Phase', 'afb-swissredesign-leads' )?></option>
-			<option value="wartenofferte" <?php selected( $sr_projektstatus_selected, 'wartenofferte' ); ?>><?php _e( 'Waiting for Proposal Acceptance', 'afb-swissredesign-leads' )?></option>
+			<option value="wartenofferte" <?php selected( $sr_projektstatus_selected, 'wartenofferte' ); ?>><?php _e( 'Wait for Proposal Acceptance', 'afb-swissredesign-leads' )?></option>
 			<option value="aktiv" <?php selected( $sr_projektstatus_selected, 'aktiv' ); ?>><?php _e( 'Active', 'afb-swissredesign-leads' )?></option>
 			<option value="beendet" <?php selected( $sr_projektstatus_selected, 'beendet' ); ?>><?php _e( 'Finished', 'afb-swissredesign-leads' )?></option>
         </select>
@@ -747,7 +747,7 @@ class AFBSwissRedesignLeads {
  
 		<div style="width:31%; display:inline-block;">
 		<p><strong><?php _e( 'Projektfortschritt', 'afb-swissredesign-leads' )?></strong></p>
-        <select name="sr_projektfort_select" id="sr_projektfort_select">
+        <select name="sr_projektfort_select">
             <option value="fortschritt_nichtgesetzt" <?php selected( $sr_projektfort_selected, 'fortschritt_nichtgesetzt' ); ?>><?php _e( 'Not Set', 'afb-swissredesign-leads' )?></option>
             <option value="10" <?php selected( $sr_projektfort_selected, '10' ); ?>>10 %</option>
 			<option value="20" <?php selected( $sr_projektfort_selected, '20' ); ?>>20 %</option>
@@ -764,7 +764,7 @@ class AFBSwissRedesignLeads {
  
 		<div style="width:31%; float:right;">
 		<p><strong><?php _e( 'Projektpriorität', 'afb-swissredesign-leads' )?></strong></p>
-        <select name="sr_projektprio_select" id="sr_projektprio_select">
+        <select name="sr_projektprio_select">
             <option value="prio_nichtgesetzt" <?php selected( $sr_projektprio_selected, 'prio_nichtgesetzt' ); ?>><?php _e( 'Nicht gesetzt', 'afb-swissredesign-leads' )?></option>
             <option value="niedrig" <?php selected( $sr_projektprio_selected, 'niedrig' ); ?>><?php _e( 'Niedrig', 'afb-swissredesign-leads' )?></option>
 			<option value="normal" <?php selected( $sr_projektprio_selected, 'normal' ); ?>><?php _e( 'Normal', 'afb-swissredesign-leads' )?></option>
@@ -851,44 +851,75 @@ class AFBSwissRedesignLeads {
 		}
 		
 		/*
-		 * Save values - function afb_sr_meta_box_firmeninfos	
-		 */			
+		 * Save values - function afb_sr_meta_box_interactions	
+		 */
+		if( isset( $_POST['sr_interaction1_date'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction1_date', esc_attr( $_POST['sr_interaction1_date'] ) );	
+		}
+		if( isset( $_POST['sr_interaction1_textarea'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction1_textarea', esc_attr( $_POST['sr_interaction1_textarea'] ) );	
+		}
+		if( isset( $_POST['sr_interaction2_date'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction2_date', esc_attr( $_POST['sr_interaction2_date'] ) );	
+		}
+		if( isset( $_POST['sr_interaction2_textarea'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction2_textarea', esc_attr( $_POST['sr_interaction2_textarea'] ) );	
+		}
+		if( isset( $_POST['sr_interaction3_date'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction3_date', esc_attr( $_POST['sr_interaction3_date'] ) );	
+		}
+		if( isset( $_POST['sr_interaction3_textarea'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction3_textarea', esc_attr( $_POST['sr_interaction3_textarea'] ) );	
+		}
+		if( isset( $_POST['sr_interaction4_date'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction4_date', esc_attr( $_POST['sr_interaction4_date'] ) );	
+		}
+		if( isset( $_POST['sr_interaction4_textarea'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction4_textarea', esc_attr( $_POST['sr_interaction4_textarea'] ) );	
+		}
+		if( isset( $_POST['sr_interaction5_date'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction5_date', esc_attr( $_POST['sr_interaction5_date'] ) );	
+		}
+		if( isset( $_POST['sr_interaction5_textarea'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction5_textarea', esc_attr( $_POST['sr_interaction5_textarea'] ) );	
+		}
+		if( isset( $_POST['sr_interaction6_date'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction6_date', esc_attr( $_POST['sr_interaction6_date'] ) );	
+		}
+		if( isset( $_POST['sr_interaction6_textarea'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction6_textarea', esc_attr( $_POST['sr_interaction6_textarea'] ) );	
+		}
+		if( isset( $_POST['sr_interaction7_date'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction7_date', esc_attr( $_POST['sr_interaction7_date'] ) );	
+		}
+		if( isset( $_POST['sr_interaction7_textarea'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction7_textarea', esc_attr( $_POST['sr_interaction7_textarea'] ) );	
+		}
+		if( isset( $_POST['sr_interaction8_date'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction8_date', esc_attr( $_POST['sr_interaction8_date'] ) );	
+		}
+		if( isset( $_POST['sr_interaction8_textarea'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction8_textarea', esc_attr( $_POST['sr_interaction8_textarea'] ) );	
+		}
+		if( isset( $_POST['sr_interaction9_date'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction9_date', esc_attr( $_POST['sr_interaction9_date'] ) );	
+		}
+		if( isset( $_POST['sr_interaction9_textarea'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction9_textarea', esc_attr( $_POST['sr_interaction9_textarea'] ) );	
+		}
+		if( isset( $_POST['sr_interaction10_date'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction10_date', esc_attr( $_POST['sr_interaction10_date'] ) );	
+		}
+		if( isset( $_POST['sr_interaction10_textarea'] ) ) {
+			update_post_meta( $post_id, '_sr_interaction10_textarea', esc_attr( $_POST['sr_interaction10_textarea'] ) );	
+		}		
+		
+		/*
+		 * Save values - function afb_sr_meta_box_designbrief	
+		 */
 		if ( isset ( $_POST['sr_bisheriger_designstil'] ) ) {
 			update_post_meta($post_id, '_sr_bisheriger_designstil', $_POST['sr_bisheriger_designstil']);
-		}
-
-		$sr_bisheriger_designstil = get_post_meta($post -> ID, '_sr_bisheriger_designstil', true);
-		$sr_designbrief_checkbox1 = get_post_meta($post -> ID, '_sr_designbrief_checkbox1', true);
-		$sr_designbrief_checkbox2 = get_post_meta($post -> ID, '_sr_designbrief_checkbox2', true);
-		$sr_designbrief_checkbox3 = get_post_meta($post -> ID, '_sr_designbrief_checkbox3', true);
-		$sr_designbrief_checkbox4 = get_post_meta($post -> ID, '_sr_designbrief_checkbox4', true);
-		$sr_designbrief_checkbox5 = get_post_meta($post -> ID, '_sr_designbrief_checkbox5', true);
-		$sr_designbrief_checkbox6 = get_post_meta($post -> ID, '_sr_designbrief_checkbox6', true);
-		$sr_designbrief_checkbox7 = get_post_meta($post -> ID, '_sr_designbrief_checkbox7', true);
-		$sr_designbrief_checkbox8 = get_post_meta($post -> ID, '_sr_designbrief_checkbox8', true);
-		$sr_designbrief_checkbox9 = get_post_meta($post -> ID, '_sr_designbrief_checkbox9', true);
-		$sr_designbrief_checkbox10 = get_post_meta($post -> ID, '_sr_designbrief_checkbox10', true);
-		$sr_designbrief_checkbox11 = get_post_meta($post -> ID, '_sr_designbrief_checkbox11', true);
-		$sr_designbrief_checkbox12 = get_post_meta($post -> ID, '_sr_designbrief_checkbox12', true);
-		$sr_designbrief_checkbox13 = get_post_meta($post -> ID, '_sr_designbrief_checkbox13', true);
-		$sr_designbrief_checkbox14 = get_post_meta($post -> ID, '_sr_designbrief_checkbox14', true);
-		$sr_designbrief_checkbox15 = get_post_meta($post -> ID, '_sr_designbrief_checkbox15', true);
-		$sr_designbrief_checkbox16 = get_post_meta($post -> ID, '_sr_designbrief_checkbox16', true);
-		$sr_designbrief_checkbox17 = get_post_meta($post -> ID, '_sr_designbrief_checkbox17', true);
-		$sr_designbrief_checkbox18 = get_post_meta($post -> ID, '_sr_designbrief_checkbox18', true);
-		$sr_designbrief_checkbox19 = get_post_meta($post -> ID, '_sr_designbrief_checkbox19', true);
-		$sr_designbrief_checkbox20 = get_post_meta($post -> ID, '_sr_designbrief_checkbox20', true);
-		$sr_designbrief_checkbox21 = get_post_meta($post -> ID, '_sr_designbrief_checkbox21', true);
-		$sr_designbrief_checkbox22 = get_post_meta($post -> ID, '_sr_designbrief_checkbox22', true);
-		$sr_designbrief_checkbox23 = get_post_meta($post -> ID, '_sr_designbrief_checkbox23', true);
-		$sr_designbrief_checkbox24 = get_post_meta($post -> ID, '_sr_designbrief_checkbox24', true);
-		$sr_designbrief_checkbox25 = get_post_meta($post -> ID, '_sr_designbrief_checkbox25', true);
-		$sr_designbrief_checkbox26 = get_post_meta($post -> ID, '_sr_designbrief_checkbox26', true);
-		$sr_designbrief_checkbox27 = get_post_meta($post -> ID, '_sr_designbrief_checkbox27', true);
-		
-		$sr_design_primarycolor = get_post_meta($post -> ID, '_sr_design_primarycolor', true);
-		$sr_design_secondarycolor = get_post_meta($post -> ID, '_sr_design_secondarycolor', true);		
-
+		}		 
 		if( isset( $_POST[ 'sr_designbrief_checkbox1' ] ) ) {
 			update_post_meta( $post_id, '_sr_designbrief_checkbox1', 'yes' );
 		} else {
@@ -1042,9 +1073,86 @@ class AFBSwissRedesignLeads {
 		/*
 		 * Save values - function afb_sr_meta_box_goals	
 		 */	
+		if( isset( $_POST[ 'sr_goals_checkbox1' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox1', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox1', '' );
+		}	
+		if( isset( $_POST[ 'sr_goals_checkbox2' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox2', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox2', '' );
+		}	
+		if( isset( $_POST[ 'sr_goals_checkbox3' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox3', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox3', '' );
+		}
+		if( isset( $_POST[ 'sr_goals_checkbox4' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox4', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox4', '' );
+		}	
+		if( isset( $_POST[ 'sr_goals_checkbox5' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox5', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox5', '' );
+		}	
+		if ( isset ( $_POST[ 'sr_goals_textarea1'] ) ) {
+			update_post_meta( $post_id, '_sr_goals_textarea1', $_POST[ 'sr_goals_textarea1'] );
+		}		
+		if( isset( $_POST[ 'sr_goals_checkbox6' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox6', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox6', '' );
+		}	
+		if( isset( $_POST[ 'sr_goals_checkbox7' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox7', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox7', '' );
+		}	
+		if( isset( $_POST[ 'sr_goals_checkbox8' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox8', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox8', '' );
+		}	
+		if( isset( $_POST[ 'sr_goals_checkbox9' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox9', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox9', '' );
+		}
+		if( isset( $_POST[ 'sr_goals_checkbox10' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox10', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox10', '' );
+		}
+		if( isset( $_POST[ 'sr_goals_checkbox11' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox11', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox11', '' );
+		}
+		if( isset( $_POST[ 'sr_goals_checkbox12' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox12', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox12', '' );
+		}
+		if( isset( $_POST[ 'sr_goals_checkbox13' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox13', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox13', '' );
+		}	
+		if( isset( $_POST[ 'sr_goals_checkbox14' ] ) ) {
+			update_post_meta( $post_id, '_sr_goals_checkbox14', 'yes' );
+		} else {
+			update_post_meta( $post_id, '_sr_goals_checkbox14', '' );
+		}		
+		if ( isset ( $_POST[ 'sr_goals_textarea2'] ) ) {
+			update_post_meta( $post_id, '_sr_goals_textarea2', $_POST[ 'sr_goals_textarea2'] );
+		}		
 
-
-		
+		/*
+		 * Save values - function afb_sr_meta_box_contact	
+		 */			
 		$old = get_post_meta($post_id, 'repeatable_fields', true);
 		$new = array();
 		$dates = $_POST['date'];
@@ -1063,6 +1171,18 @@ class AFBSwissRedesignLeads {
 		elseif ( empty($new) && $old )
 			delete_post_meta( $post_id, 'repeatable_fields', $old );
 			
+		/*
+		 * Save values - function afb_sr_meta_box_project	
+		 */			
+		if( isset( $_POST['sr_project_start_date'] ) ) {
+			update_post_meta( $post_id, '_sr_project_start_date', esc_attr( $_POST['sr_project_start_date'] ) );	
+		}
+		if( isset( $_POST['sr_project_projend_date'] ) ) {
+			update_post_meta( $post_id, '_sr_project_projend_date', esc_attr( $_POST['sr_project_projend_date'] ) );	
+		}
+		if( isset( $_POST['sr_project_end_date'] ) ) {
+			update_post_meta( $post_id, '_sr_project_end_date', esc_attr( $_POST['sr_project_end_date'] ) );	
+		}		
 		if( isset( $_POST['sr_projektstatus_select'] ) ) {
 			update_post_meta( $post_id, 'sr_projektstatus_select', esc_attr( $_POST['sr_projektstatus_select'] ) );	
 		}	

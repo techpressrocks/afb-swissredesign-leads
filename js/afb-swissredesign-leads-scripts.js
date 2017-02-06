@@ -27,14 +27,7 @@ jQuery(document).ready(function($){
 		$(this).parents('tr').remove();
 		return false;
 	});
-	
-	$('#start_date').datepicker({
+	$('.datepicker').datepicker({
 		dateFormat : 'dd.mm.yy'
 	});
-	$('#projectedend_date').datepicker({
-		dateFormat : 'dd.mm.yy'
-	});
-	$('#end_date').datepicker({
-		dateFormat : 'dd.mm.yy'
-	});	
 });	
