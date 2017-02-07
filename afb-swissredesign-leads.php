@@ -37,6 +37,7 @@ class AFBSwissRedesignLeads {
 		wp_enqueue_script( 'afb_sr_scripts', plugins_url( '/js/afb-swissredesign-leads-scripts.js' , __FILE__ ), array( 'jquery' ) );
 		wp_enqueue_script( 'afb_sr_logouploader', plugins_url( '/js/afb-swissredesign-logo-uploader.js' , __FILE__ ), array( 'jquery' ) );
 		wp_enqueue_script( 'jquery-ui-datepicker' );
+		wp_enqueue_script( 'jquery-ui-timepicker-addon', plugins_url( '/js/jquery-ui-timepicker-addon.js' , __FILE__ ), array( 'jquery-ui-core' ,'jquery-ui-datepicker', 'jquery-ui-slider') );
 	}	
 	
 	public function afb_sr_lead() {
@@ -1199,6 +1200,7 @@ class AFBSwissRedesignLeads {
 		if( $typenow == 'lead' ) {
 			wp_enqueue_style( 'sr_meta_box_styles', plugin_dir_url( __FILE__ ) . 'afb-swissredesign-leads.css' );
 			wp_enqueue_style( 'jquery-ui-datepicker-style' , '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css');
+			wp_enqueue_style( 'jquery-ui-timepicker-addon', plugin_dir_url( __FILE__ ) . '/js/jquery-ui-timepicker-addon.css' );
 		}
 	}
 	

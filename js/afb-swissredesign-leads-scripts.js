@@ -27,7 +27,8 @@ jQuery(document).ready(function($){
 		$(this).parents('tr').remove();
 		return false;
 	});
-	$('.datepicker').datepicker({
-		dateFormat : 'dd.mm.yy'
-	});
+	$('.datepicker').datetimepicker();
+	$('.datepicker').timepicker(
+		$.timepicker.regional['de']
+	);
 });	
